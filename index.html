@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body class="body">
+
+    <div class="d-none bg-white bg-opacity-50 position-absolute w-100 min-vh-100" id="signup">
+        <div class="bg-secondary-subtle py-5 position-absolute w-100 top-50 start-0 translate-middle-y text-center">
+            <i class="bi bi-x-circle" onclick="mostraSignup()"></i>
+            <h1>Sign Up</h1>
+            <p>Please fill in this form to create an account</p>
+            <input type="text" id="userReg">
+            <input type="password" id="passwoReg">
+            <button class="btn btn-dark" onclick="registra()">Sign Up</button>
+
+
+            <div class="d-none text-white mx-auto w-75" id="popUpReg">
+                <p id="messaggioReg"></p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row px-2">
+        <div class="d-none d-sm-block col-sm-6 col-md-7 text-white">
+            <h1 class="py-2">Hi guys</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem veniam soluta doloremque reprehenderit.
+                Cupiditate eligendi ab deleniti accusamus adipisci. Laborum, facilis ipsam cumque eligendi consequatur
+                vero sint inventore quaerat at?</p>
+
+        </div>
+
+
+        <div class="col-sm-6 col-md-5 bg-white min-vh-100 py-2">
+            <h1>Login</h1>
+            <p>Don't have an account? <span class="text-primary" onclick="mostraSignup()">Create your account</span>,
+                Takes a few minutes</p>
+
+            <div class="d-none text-white p-2 w-50" id="popUpLogin">
+                <p id="messaggioLogin"></p>
+            </div>
+
+            <p class="pt-3 mb-1">Username</p>
+            <input type="text" class="w-50" id="user">
+
+            <p class="pt-3 mb-1">Password</p>
+            <input type="password" class="w-50" id="pass">
+            <i class="bi bi-eye-fill" onclick="togglePassword()" id="iPass"></i>
+            <br>
+            <button type="button" class="btn btn-primary my-2" onclick="login()">Login</button>
+        </div>
+    </div>
+
+
+
+
+    <script src="./js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

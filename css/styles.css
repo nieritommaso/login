@@ -1,0 +1,8 @@
+
+.body{
+    background-image: url("../images/spazio.webp")
+}
+
+.striscia-signup {
+    z-index: 2;
+}
